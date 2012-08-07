@@ -1,0 +1,7 @@
+<resources>
+
+    <string name="app_name">Hitstock</string>
+    <string name="title_activity_hitstock_map">Mapa para o Hitstock</string>
+    <string name="local">Local</string>
+
+</resources>

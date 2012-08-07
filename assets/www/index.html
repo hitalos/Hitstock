@@ -1,0 +1,125 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<title>Hitstock</title>
+
+	<link rel="stylesheet" href="css/jquery.mobile.hitstock.theme.css"/>
+	<link rel="stylesheet" href="css/jquery.mobile.structure.css"/>
+	<link rel="stylesheet" href="css/hitstock.css"/>
+
+	<script type="text/javascript" charset="utf-8" src="js/cordova.js"></script>
+	<script type="text/javascript" charset="utf-8" src="js/jquery.js"></script>
+	<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyBAWe4Kdo6VAt44G2nGTPDnBP8HcHaTu2M&sensor=false"></script>
+	<script type="text/javascript" charset="utf-8" src="js/hitstock.js"></script>
+	<script type="text/javascript" charset="utf-8" src="js/jquery.mobile.js"></script>
+	
+</head>
+<body>
+	<!-- Home -->
+	<div data-theme="a" data-role="page" id="home" title="App oficial do Hitstock!">
+	    <div data-role="content">
+	        <ul data-role="listview" data-inset="true">
+	            <li><a href="#previas" data-transition="slide">Prévias</a></li>
+	            <li><a href="#atracoes" data-transition="slide">Atrações previstas</a></li>
+	            <li><a href="#o_que_levar" data-transition="slide">O que levar...</a></li>
+	            <li><a href="#como_contribuir" data-transition="slide">Como contribuir...</a></li>
+	            <li><a href="#o_que_esperar" data-transition="slide">O que esperar...</a></li>
+	            <li><a href="#fotos" data-transition="slide">Fotos das edições anteriores</a></li>
+	            <li><a href="#confirme" data-transition="slide">Confirme a sua presença!</a></li>
+	            <li><a href="#datalocal" data-transition="slide">Data e local</a></li>
+	        </ul>
+	    </div>
+	</div>
+
+	<div data-theme="a" data-role="page" id="previas" title="Prévias">   	
+    	<div data-role="content">
+    		<ul>
+    			<li>Noite do Paulista (data a confirmar)</li>
+    			<li>Jantar na batcaverna</li>
+    			<li>Jam session</li>
+    		</ul>
+    	</div>
+	</div>
+	
+	<div data-theme="a" data-role="page" id="atracoes" title="Atrações previstas">
+    	<div data-role="content">
+    		<ul>
+    			<li>Léo Gordo (Recife)</li>
+    			<li>Jurandir Bozo (Pão de Açúcar)</li>
+    			<li>Kaw Lima (Maceió)</li>
+    		</ul>
+    		<p>P.S.: Esse ano não contaremos com a presença de Erik pois o mesmo estará parindo durante o evento.</p>
+    	</div>
+	</div>
+	
+	<div data-theme="a" data-role="page" id="o_que_levar" title="O que levar...">
+    	<div data-role="content">
+    	    <ul>
+    			<li>Disposição</li>
+    			<li>Itens de conforto pra quem for dormir (colchão, ventilador, lençol, repelente...)</li>
+    			<li>Bebida (caso não consuma destilados)</li>
+    		</ul>
+    	</div>
+	</div>
+	
+	<div data-theme="a" data-role="page" id="como_contribuir" title="Como contribuir...">
+    	<div data-role="content">
+    		<ul>
+    			<li>Não levar penetras</li>
+    			<li>Avisar se for levar alguém (mesmo que este seja bem-vindo)</li>
+    			<li>Tira-gostos e mais bebidas são sempre bem-vindos</li>
+    		</ul>
+    	</div>
+	</div>
+	
+	<div data-theme="a" data-role="page" id="o_que_esperar" title="O que esperar...">
+    	<div data-role="content">
+    		<ul>
+    			<li>Música o tempo todo (rock de todos os estilos, mas apenas o bom, velho ou novo rock)</li>
+    			<li>Muita gente animada e divertida</li>
+    			<li>Ótimos drinks (alguns exóticos)</li>
+    		</ul>
+    	</div>
+	</div>
+	
+	<div data-theme="a" data-role="page" id="fotos" title="Fotos das edições anteriores">
+    	<div data-role="content">
+			<p>Falta implementar</p>
+    	</div>
+	</div>
+	
+	<div data-theme="a" data-role="page" id="confirme" title="Confirme sua presença!">
+    	<div data-role="content">
+    		<h2>Eu vou!</h2>
+    		Nome: <input name="nome"/>
+    		Fone para contato:  <input name="fone"/>
+    		Email:  <input name="email"/>
+    		
+    		<label for="dormir">Vai dormir na casa?</label>
+			<select name="dormir" id="dormir" data-role="slider">
+				<option value="off">Não</option>
+				<option value="on">Sim</option>
+			</select>
+			
+			<button type="submit">Confirmar!</button>
+    	</div>
+	</div>
+	
+	
+	<div data-theme="a" data-role="page" id="datalocal" title="Data e Local">
+    	<div data-role="content">
+    		<div>
+    			<h2>Data</h2>
+    			<p>Previsão para começar no feriado do dia 15/11 (quinta), podendo imprensar a sexta e esticar até o domingo.</p>
+    			<p>Isso mesmo, serão 4 dias pra quem resistir até o fim!</p>
+    		</div>
+    		<div style="height: 350px">
+    			<h2>Local</h2>
+    			<div id="map_canvas" style="width: 100%; height: 300px"></div>
+    		</div>
+    	</div>
+	</div> 
+</body>
+</html>
